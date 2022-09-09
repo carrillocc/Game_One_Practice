@@ -1,5 +1,6 @@
 let character = document.getElementById("character");
 let block = document.getElementById("block");
+let resetButton = document.getElementById('reset');
 
 function jump() {
     if(character.classList != 'animate') {
@@ -20,3 +21,7 @@ let checkDead = setInterval(function(){
         alert("you lost");
     }
 }, 10);
+
+resetButton.addEventListener('click', function() {
+    location.reload();
+})
